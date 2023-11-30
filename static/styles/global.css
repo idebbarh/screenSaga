@@ -1,0 +1,12 @@
+.scale-hover-effect:hover .scale-hover-effect-img-container img {
+  scale: var(--hover-scale-value);
+}
+.site-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-bg-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
