@@ -1,0 +1,72 @@
+.header-nav {
+  position: absolute;
+  left: 50%;
+  top: 6rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  width: 1200px;
+  max-width: 100%;
+  color: white;
+}
+.header-nav__logo {
+  font-size: 1.9rem;
+  display: flex;
+}
+.header-nav__logo span:first-of-type {
+  font-weight: 800;
+}
+.header-nav__logo span {
+  text-transform: capitalize;
+}
+.header-nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header-nav__link {
+  position: relative;
+  display: block;
+  padding: 0.2rem 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.header-nav__link svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+}
+
+.header-nav__item:last-child .header-nav__link {
+  border-left: 1px solid #ffffff61;
+}
+.header-nav__link::before {
+  content: "";
+  position: absolute;
+  left: 1.8rem;
+  bottom: -4px;
+  opacity: 0;
+  width: calc(100% - calc(1.8rem * 2));
+  height: 2px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.header-nav__item:last-child:last-child .header-nav__link::before {
+  display: none;
+}
+.header-nav__link:hover::before {
+  bottom: -2px;
+  opacity: 1;
+}
+.header-nav__item:last-child:last-child .header-nav__link {
+  transition: 0.3s ease-in-out;
+}
+.header-nav__item:last-child:last-child .header-nav__link:hover {
+  opacity: 0.6;
+}

@@ -9,20 +9,21 @@ screenSaga
 {% block page_content %}
 <!-- start header -->
 <header id="home-header">
+    {% include "includes/header-nav.html" %}
     <!-- start side -->
     <div class="home-header__side home-header__side--left">
-        <div class="side__blored-image">
+        <div class="home-header__blored-image">
             <div class="site-overlay"></div>
             <img src="{% static 'myblog/assets/images/header-image-1.jpg' %}" alt="">
         </div>
-        <article class="side__blog-card scale-hover-effect">
-            <div class="blog-card__image scale-hover-effect-img-container">
+        <article class="home-header__blog-card scale-hover-effect">
+            <div class="home-header__blog-card-image scale-hover-effect-img-container">
                 <img src="{% static 'myblog/assets/images/header-image-1.jpg' %}" alt="">
             </div>
-            <div class="blog-card__info">
-                <span class="info__cat">art</span>
-                <h3 class="info__title">Sad Robots: Digital Paintings by Burton Gray</h3>
-                <p class="info__description">Digital artist Burton Gray takes us on a journey into the emotional depths of artificial intelligence through his “Sad Robots” series. </p>
+            <div class="home-header__blog-card-info">
+                <span class="home-header__info-cat">art</span>
+                <h3 class="home-header__info-title">Sad Robots: Digital Paintings by Burton Gray</h3>
+                <p class="home-header__info-description">Digital artist Burton Gray takes us on a journey into the emotional depths of artificial intelligence through his “Sad Robots” series. </p>
             </div>
         </article>
     </div>
@@ -30,18 +31,18 @@ screenSaga
     <!-- end side -->
     <!-- start side -->
     <div class="home-header__side home-header__side--right">
-        <div class="side__blored-image">
+        <div class="home-header__blored-image">
             <div class="site-overlay"></div>
             <img src="{% static 'myblog/assets/images/header-image-2.jpg' %}" alt="">
         </div>
-        <article class="side__blog-card scale-hover-effect">
-            <div class="blog-card__image scale-hover-effect-img-container">
+        <article class="home-header__blog-card scale-hover-effect">
+            <div class="home-header__blog-card-image scale-hover-effect-img-container">
                 <img src="{% static 'myblog/assets/images/header-image-2.jpg' %}" alt="">
             </div>
-            <div class="blog-card__info">
-                <span class="info__cat">art</span>
-                <h3 class="info__title">Outside Robots: Wooden Sculptures by Willa Yang</h3>
-                <p class="info__description">Outside Robots is an adorable series of wooden sculptures by Taipei-baed artist and designer Willa Yang.</p>
+            <div class="home-header__blog-card-info">
+                <span class="home-header__info-cat">art</span>
+                <h3 class="home-header__info-title">Sad Robots: Digital Paintings by Burton Gray</h3>
+                <p class="home-header__info-description">Digital artist Burton Gray takes us on a journey into the emotional depths of artificial intelligence through his “Sad Robots” series. </p>
             </div>
         </article>
     </div>
